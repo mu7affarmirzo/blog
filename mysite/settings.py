@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -40,7 +41,8 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
 
     'taggit',
-    'django.contrib.sites',
+    'django.contrib.postgres',
+    # 'django.contrib.sites',
     'django.contrib.sitemaps',
 ]
 
@@ -87,8 +89,12 @@ EMAIL_USE_TLS = True
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'blog',
+        'USER': 'postgres',
+        'PASSWORD': '25524',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 

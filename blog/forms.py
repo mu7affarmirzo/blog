@@ -1,6 +1,9 @@
 from django import forms
 from .models import CommentModel
 
+class SearchForm(forms.Form):
+	query = forms.CharField()
+
 class CommentForm(forms.ModelForm):
 	class Meta:
 		model = CommentModel
