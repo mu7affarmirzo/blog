@@ -8,9 +8,10 @@
 	{% if tag %}
 		<h2>Posts tagged with "{{ tag.name }}"</h2>
 	{% endif %}
+
 	{% for post in posts %}
-		<h2>
-			<a href="{{ post.get_absolute_url }}">
+		<h2 class="jumbotron">
+			<a id='p1' href="{{ post.get_absolute_url }}">
 			{{ post.title }}
 			<p class="tags">
 				Tags: 

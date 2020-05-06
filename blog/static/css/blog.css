@@ -1,0 +1,36 @@
+body {
+    background-color: lightblue;
+    text-align: center;
+}
+div{
+	/*margin: 25px 15px 15px 15px;*/
+	/*border: 1px solid;*/
+}
+/*#sidebar{
+	background-color: lightgray;
+	border: 2px solid red;
+}*/
+
+.sidenav {
+  height: 100%;
+  width: 260px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(240, 240, 240);
+  overflow-x: hidden;
+  /*padding-top: 20px;*/
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #b3b3b3;
+}
